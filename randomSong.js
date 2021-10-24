@@ -13,4 +13,19 @@ console.log(randSongGen(randomSongs));
 
 const songButton = document.querySelector('#song-button');
 console.log(songButton);
+const songList = document.querySelector('#songs');
+console.log(songs)
+
+songButton.addEventListener('click', onSubmit);
+
+    function onSubmit(e){
+        const li = document.createElement('h1');
+        li.appendChild(document.createTextNode(
+            `${randomSongs[Math.floor(Math.random() * randomSongs.length)]}`
+        ));
+        songList.appendChild(li);
+
+    }
+    
+
 
