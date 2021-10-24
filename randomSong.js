@@ -11,3 +11,6 @@ let randSongGen = (songs) => songs[Math.floor(Math.random() * songs.length)];
 
 console.log(randSongGen(randomSongs));
 
+const songButton = document.querySelector('#song-button');
+console.log(songButton);
+
